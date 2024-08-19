@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-const Home: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <h1>Projects Page</h1>
     </Layout>
   );
 };
 
-export default Home;
+export default Projects;
