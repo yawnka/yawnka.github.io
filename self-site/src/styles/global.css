@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-bar-button {
+    @apply text-white text-xl font-bold transition;
+}
+  
+.nav-bar-button:hover {
+    @apply text-custom-dark-green;
+}
+
+.route-page-button {
+    @apply text-custom-dark-green font-bold
+}
+.route-page:hover {
+    @apply hover:underline;
+}
+
+hr {
+    height: 0px;
+    border: none;
+    border-top: 1px solid black;
+}
+
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    overflow: hidden;
+    gap: 8px; /* Reduced gap between words */
+  }
+  
+  .floating-word {
+    animation: floatVertical 5s ease-in-out infinite;
+  }
+  
+  @keyframes floatVertical {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+   
+@font-face {
+    font-family: 'Silkscreen-Bold';
+    src: url('../fonts/Silkscreen-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silkscreen-Regular';
+    src: url('../fonts/Silkscreen-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+font-family: 'AnticSlab';
+src: url('../fonts/AnticSlab-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'Judson-Regular';
+    src: url('/src/fonts/Judson-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Judson-Bold';
+    src: url('/src/fonts/Judson-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('/src/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('/src/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
