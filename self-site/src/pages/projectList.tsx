@@ -1,4 +1,4 @@
-export const projectsList = [
+const projectsList = [
     {
       slug: 'project-one',
       name: 'Binged',
