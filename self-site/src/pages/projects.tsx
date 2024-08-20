@@ -7,11 +7,11 @@ const Projects: React.FC = () => {
   const description = "Here are the projects I have worked on and learned so much from! Some projects may not have an article.";
   const projectsList = [
     {
-      slug: 'project-one',
+      slug: 'Binged',
       name: 'Binged',
       date: '2024',
       tagline: 'Full Stack Social Media Hinge like website to discover books and make friends!',
-      writeup: '/articles/project-one',
+      writeup: '/articles/binged',
     },
     {
       slug: 'project-two',
