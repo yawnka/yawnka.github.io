@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+.black-bold {
+  @apply font-bold text-black;
+}
+
+.green-bold {
+  @apply font-bold text-custom-dark-green;
+}
+
 .nav-bar-button {
     @apply text-white text-xl font-bold transition;
 }
