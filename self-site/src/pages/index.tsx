@@ -12,7 +12,9 @@ const Home: React.FC = () => {
     "AI/ML models",
     "Cybersecurity",
     "Data Scraping",
-    "Etc!"
+    "Game Development!",
+    "Research",
+    "Open to learning more in the tech world!"
   ];
   
   const myLikes = [

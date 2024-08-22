@@ -28,15 +28,15 @@ const Projects: React.FC = () => {
       name: 'SeaScribe',
       date: '2024',
       tagline: 'Website created for those dealing with burnout to journal and create to-dos and interact with a supportive bot!',
-      writeup: '/articles/project-three',
+      writeup: '/articles/SeaScribe',
     },
     {
       slug:'project-six',
-      url: `https://github.com/yawnka/yawnka.github.io`,
+      url: `https://github.com/yawnka/CrimeTracker_DB`,
       name: 'Police Station Criminal Database & Website',
       date: '2024',
       tagline: 'Created a database system along with a website for police officers and users to obtain police related information.',
-      writeup: '/articles/project-two',
+      writeup: '/articles/PoliceDatabase',
     },
     {
       slug:'project-seven',

@@ -68,17 +68,18 @@ const Binged: React.FC = () => {
             <li><span className="black-bold">Profile Logout & Edit:</span> User can logout using the top right button. The edit button under logout allows user to change their avatar, favorite book, and currently reading.</li>
             <li><span className="black-bold">Friends:</span> Can send, receive, and accept friend requests. Friends can comment on each other's ratings.</li>
             <li><span className="black-bold">Profile Visibility:</span> Anyone can see other people's public profiles with all the displayed features, but non-friends cannot comment on another user's completed books.</li>
+            <li><span className="black-bold">MongoDB Atlas AWS Database Storage:</span> Allows for users to change and edit their account-related information and shelves which are connected and automatically updated through the DB.</li>
           </ul>
         <h3 className="text-xl font-semibold mb-2">Backend:</h3>
         <ul className="list-disc ml-6 mb-4">
-          <li><span className="black-bold"> Goodreads-WebScraper:</span> Contributed to Open-Source Goodreads-Scraper (https://github.com/maria-antoniak/goodreads-scraper) as it was outdated (Not Updated on Repo Yet). Updated the code and utilized what my website needed. </li>
+          <li><span className="black-bold"> Goodreads-WebScraper:</span> Contributed to Open-Source Goodreads-Scraper (https://github.com/maria-antoniak/goodreads-scraper) as it was outdated (Not Updated on Repo Yet). Updated the python script and utilized what my website needed. </li>
           <li><span className="black-bold">Flask:</span> Python-based web development framework</li>
           <li><span className="black-bold">MongoDB Atlas AWS Database:</span> Cluster created for storing & pulling book and user data.</li>
           <li><span className="black-bold">Google OAuth 2.0</span> (Not currently available on the website): Implemented but due to cookie issues I opted to use registration with Flask for the production site.</li>
           <li><span className="black-bold">AI/ML Models</span></li>
           <a><span className="black-bold"> [1] Content-Based Filtering Machine Learning Model for Book Recommendations:</span></a>
             <p>Tools such as pandas and numpy are used for data handling such as one-hot encoding book genres. 
-              Sklearn was used for scaling and text-vectorization (TF-IDF). Then using the transoformed and scaled information, the model calculates
+              Sklearn was used for scaling and text-vectorization (TF-IDF). Then using the transformed and scaled information, the model calculates
               the similarities between books using cosine similarity based on several features like genres, summaries, and the users first 5 liked books.
               This model is only used once at the beginning when the user first creates their accound to recommend books based on the first 5 books the user likes.</p>
           <a><span className="black-bold">[2] Collaborative Filtering for Updating User Explore Feed for Book Recommendations:</span></a>
