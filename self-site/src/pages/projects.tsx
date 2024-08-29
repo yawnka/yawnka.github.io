@@ -13,6 +13,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Full Stack Social Media Hinge like website to discover books and make friends!',
       writeup: '/articles/binged',
+      visible: true,
     },
     {
       slug:'project-two',
@@ -21,6 +22,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Website/App to explore and discover different cafe spots in NYC.',
       writeup: '/articles/cafeCapture',
+      visible: false,
     },
     {
       slug:'project-three',
@@ -29,6 +31,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Website created for those dealing with burnout to journal and create to-dos and interact with a supportive bot!',
       writeup: '/articles/SeaScribe',
+      visible: true,
     },
     {
       slug:'project-six',
@@ -37,6 +40,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Created a database system along with a website for police officers and users to obtain police related information.',
       writeup: '/articles/PoliceDatabase',
+      visible: true,
     },
     {
       slug:'project-seven',
@@ -45,6 +49,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Team based project creating a VR based navigation and utility app to explore a NYU library and find books and rooms.',
       writeup: '/articles/project-four',
+      visible: true,
     },
     {
       slug:'project-eight',
@@ -53,6 +58,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Basic implementation of ping pong while learning game dev.',
       writeup: '/articles/project-four',
+      visible: true,
     },
     {
       slug:'project-nine',
@@ -61,6 +67,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Full robotic build to autonmously measure and display space given in an area.',
       writeup: '/articles/project-four',
+      visible: true,
     },
   ];
   return (
@@ -70,7 +77,9 @@ const Projects: React.FC = () => {
         <p className="text-lg mb-8">{description}</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projectsList.map((project) => (
+          {projectsList
+            .filter(project => project.visible)
+            .map((project) => (
             <div key={project.slug} className="border rounded-xl shadow-lg p-6 bg-white">
               <div className="mb-2 flex justify-between items-center">
                 <time className="text-sm text-gray-600">{project.date}</time>

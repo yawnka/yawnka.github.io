@@ -1,13 +1,12 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import seaScribeDemo from '../../images/seaScribe_demo.png';
-import seaScribeLogo from '../../images/seaScribe_logo.png';
 import seaScribeTeam from '../../images/seaScribe_team.png';
+//XAMPP is a free, open-source software package that provides a local web server environment for testing and developing websites and applications
 
 const PoliceDatabase: React.FC = () => {
   const projectTitle = 'Criminal Database Website';
-  const blurb = '';
-  const overview = '';
+  const blurb = 'An optimized fullstack website for a police station to store criminal record information and police officer information.';
   const ideation = ''
   return (
     <Layout>
@@ -15,102 +14,83 @@ const PoliceDatabase: React.FC = () => {
       <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-lg text-left">
         {/* Project Title and Blurb */}
         <div className="flex items-center mb-8">
-          <h1 className="text-6xl font-judson_bold font-bold mb-4">{projectTitle}</h1>
+          <h1 className="text-4xl font-bold mb-4">{projectTitle}</h1>
         </div>
-        <p className="text-xl mb-4">{blurb}</p>
+        <p className="text-xl mb-8">{blurb}</p>
 
         {/* Overview Section */}
-        <h2 className="text-2xl text-black font-bold mb-2">Overview</h2>
-        <p className="text-xl mb-4">{overview}</p>
+        <h2 className="text-2xl font-bold mb-2">Overview</h2>
+        <p className="mb-4"> This project was created to learn about databases and how to connect code to a phpMyAdmin 
+          localhost database server. I utilized XAMPP to host the server to create and use database information on phpmyAdmin. 
+          Databases, tables, and information were created using SQL statements as attached in the source. The fullstack website was created for two views:
+           a normal viewer and a police officer with more viewer privileges. There is a registration system for the two different views
+           which displays different pages and viewership of private and public data based on the user. The code pulls information
+           using SQL statements to pull from the database. </p>
 
-          {/* Program & Team */}
-          <h2 className="text-2xl text-black font-bold mb-2"> Facilitated by Cherry on Tech Cohort Program Internship</h2>
-          <h2>More information about Cherry on Tech will be provided at the bottom of this page!</h2>
-          {/* Role */}
-          <div className="flex items-center space-x-4 mt-4 mb-4">
+        {/* Role */}
+        <div className="flex items-center space-x-4 mb-4">
             <h2 className="text-2xl font-bold">Role</h2>
-            <h3 className="text-xl font-semibold"> Frontend Developer </h3>
+            <h3 className="text-xl font-semibold"> Fullstack Developer</h3>
           </div>
-
+        
           <h2 className="text-2xl font-bold">Team</h2>
-          <div className="flex items-center mb-8">
-            <img src={seaScribeTeam} alt="seaScribe Team" className="w-30 h-30 mr-4 rounded-lg" />
-          </div>
-
-          {/* Timeline */}
-          <div className="flex items-center space-x-4 mt-4 mb-4">
-            <h2 className="text-2xl font-bold">Timeline</h2>
-            <h3 className="text-xl font-semibold">March 2024 - July 2024</h3>
-          </div>
-
-        {/* Ideation */}
-        <div className="flex items-center space-x-4">
-          <h2 className="text-2xl font-bold mb-2">Ideation</h2>
-          <h3 className="text-xl font-semibold mb-2">Why {projectTitle}?</h3>
+        <div className="flex items-center mb-4">
+          <ul className="list-disc ml-6 mb-4">
+            <li> <span className="black-bold">Raiya Haque </span> - FullStack Developer</li>
+            <li><span className="black-bold"> Orion Yang </span> - FullStack Developer </li>
+          </ul>
         </div>
-        <p className="text-xl mb-4"> {ideation} </p>
+
+        {/* Timeline */}
+        <div className="flex items-center space-x-4 mb-4">
+            <h2 className="text-2xl font-bold">Timeline</h2>
+            <h3 className="text-xl font-semibold">February 2024 - May 2024</h3>
+          </div>
         
         {/* Demo Section */}
-        <div className="mt-4 mb-4">
-          <h2 className="text-2xl font-bold">Demo!</h2>
-          <a href="https://seascribe.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 text-xl font-bold hover:underline">
-            Click this to try out SeaScribe!
-          </a>
+        <div className="mt-8">
+          <h2 className="text-2xl font-bold mb-2">Demo</h2>
+          <video controls className="w-full max-w-3xl mx-auto">
+            <source src={seaScribeDemo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <img src={seaScribeDemo} alt="SeaScribe Demo" className="mr-4 rounded-lg" />
-
         {/* Tech Stack & Features */}
         <h2 className="text-2xl font-bold mt-4 mb-2">Tech Stack & Features & Development</h2>
         
         <h3 className="text-xl font-semibold mb-2">Features:</h3>
+        <h2 className="text-xl font-semibold mb-2">Regular User </h2>
+          <ul className="list-disc ml-6 mb-4">
+            <li><span className="black-bold">Registration & Login:</span> User logs in as a viewer or an officer, controlled using sessions and using info stored on the Database table for logins </li>
+            <li><span className="black-bold">Home:</span> Displays wishlist books and completed books.</li>
+            <li><span className="black-bold">Search:</span> AI Powered Book Recommendation system where user can dislike or like books that appear on feed.</li>
+            <li><span className="black-bold">Logout:</span> Initial 5 books from quiz and liked books are stored in this 'shelf' where user can preview the book, remove them, or add them to completed books.</li>
+          </ul>
+
+          <ul className="list-disc ml-6 mb-4">
+          <h2 className="text-xl font-semibold mb-2">Officer User </h2>
+            <li><span className="black-bold">Home:</span> Users can rate and review their completed books. They can edit these later as well. </li>
+            <li><span className="black-bold">Search:</span> Display an avatar, username, friends, favorite book, currently reading book, and completed books along with their ratings, reviews, and comments.</li>
+            <li><span className="black-bold">Profile Logout & Edit:</span> User can logout using the top right button. The edit button under logout allows user to change their avatar, favorite book, and currently reading.</li>
+            <li><span className="black-bold">Friends:</span> Can send, receive, and accept friend requests. Friends can comment on each other's ratings.</li>
+            <li><span className="black-bold">Profile Visibility:</span> Anyone can see other people's public profiles with all the displayed features, but non-friends cannot comment on another user's completed books.</li>
+            <li><span className="black-bold">MongoDB Atlas AWS Database Storage:</span> Allows for users to change and edit their account-related information and shelves which are connected and automatically updated through the DB.</li>
+          </ul>
+
+        <h3 className="text-xl font-semibold mb-2">Backend:</h3>
         <ul className="list-disc ml-6 mb-4">
-        <li className="black-bold">Journaling:</li>
-          <li className="ml-10"><span className="black-bold">Free Write: </span>Provides a safe space for users to unload their feelings, espeically those they experience during burnout.</li>  {/* Indented more */}
-          <li className="ml-10"><span className="black-bold">Prompt Write: </span>Suggests journaling prompts that encourage users to take a step back, reflect on their emotions, and express gratitude.</li>
-        <li className="black-bold"> Minimalistic To-Do List Creation </li>
-          <li className="ml-10">Helps users organize their tasks to boost efficiency and avoid burnout.</li>
-          <li className="ml-10">Minimalistic design and simple add, delete, and reorder tasks functionalities. Focuses on helping users organize their headspace instead of becoming another Kanban board.</li>
-        <li className="black-bold"> Jokes & Affirmation Bot </li>
-          <li className="ml-10">Acts as a friend who always provides support and validation, reminding users to love themselves.</li>
-          <li className="ml-10">Delivers constant jokes to help users relax.</li>
-          <li className="ml-10">The cute design of the starfish bot can make users feel uplifted.</li>
+          <li>Backend feature one</li>
+          <li>Backend feature two</li>
+          <li>Backend feature three</li>
         </ul>
 
         <h3 className="text-xl font-semibold mb-2">Frontend:</h3>
         <ul className="list-disc ml-6 mb-4">
-          <li className="black-bold">React</li>
-          <li className="black-bold">Tailwind CSS</li>
-          <li className="black-bold">Local Storage</li>
-          <li className="black-bold">Git and assesing code reviews on GitHub</li>
-          <li className="black-bold"> Hosting using Netlify </li>
+          <li>Frontend feature one</li>
+          <li>Frontend feature two</li>
+          <li>Frontend feature three</li>
         </ul>
 
-        <h3 className="text-xl font-semibold mb-2">Tools and Development</h3>
-        <ul className="list-disc ml-6 mb-4">
-          <li>Code Quality handling using ESLint and Prettier</li>
-          <li>Jira Sprint Planning: Assigning tasks per sprint and backlogging tasks.</li>
-          <li>Understanding how to interpret desings created by UX designers and recreating them in code</li>
-          <li>Managing Pull Requests on GitHub and Sprints on Jira</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold mb-2">Future Considerations:</h3>
-        <ul className="list-disc ml-6 mb-4">
-          <li>Backend Implementation with user accounts and Database storage.</li>
-          <li>Limit the number of to-do lists shown on the dashboard instead of infinite scrolling.</li>
-          <li>Adding relaxing background music</li>
-          <li>Making the chat bot more interactable, like an AI powered chatbot that can respond.</li>
-        </ul>
-
-        <h2 className="text-2xl font-bold mb-2">Cherry on Tech</h2>
-        <p className="text-xl mb-1">"Cherry on Tech is a volunteer-run organization whose mission is to
-           support people of women, non-binary, and trans folks who are new to the tech world. We are dedicated to
-            developing a community that empowers marginalized genders while promoting the power of being part of a 
-            tech squad. -*From their website* "</p>
-        <a href="https://cherryon.tech/" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold text-lg mb-2 hover:underline">
-            Check out the Cherry on Tech website!
-          </a>
-        <p className="text-xl mb-1"> The Cohort Program is a 15-week long program to create a working accessible web design MVP with a team replication a startup. Every person is provided a mentor to help with their role and each team is provided a mentor to facilitate with any questions or issues. There are at least two weekly meetings with the full team. One global meeting with the entire Cohort program. Other meetings dedicated to specfic teams, such as Pair Programming Meets with the Frontend Developer team. This program ensures constant communication, learning, growth, and understanding.  </p>
-        <p className="text-lg mb-4"> My Input: This community is very supporting, ambitious, and kind group of people. I met so many women, non-binary, and trans people who are all so intelligent and amibitous in gaining and using their skills to create MVP's and work professionally amongst others.</p>
       </div>
     </div>
     </Layout>
