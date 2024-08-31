@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
 import Collage from '../components/collage';
+import ScatteredLabels from '../components/ScatteredLabels';
 
 const Home: React.FC = () => {
   const TechnicalLikes = [
@@ -12,11 +13,41 @@ const Home: React.FC = () => {
     "AI/ML models",
     "Cybersecurity",
     "Data Scraping",
-    "Game Development!",
+    "Game Development",
     "Research",
     "Open to learning more in the tech world!"
   ];
-  
+  const techStack = [
+    "Python",
+    'C++',
+    "JavaScript",
+    "MongoDB",
+    "AWS",
+    "GoogleAuth",
+    "ROS",
+    "April Tags",
+    "Computer Vision",
+    "SCRUM",
+    "JavaScript",
+    "TypeScript",
+    'Arduino',
+    'Netlify',
+    'Tailwind CSS',
+    "React & React-Native",
+    'NativeWind',
+    'Google Maps API',
+    'PyTorch',
+    'scikit-learn',
+    'sklearn',
+    'pandas',
+    'numpy',
+    'SQL',
+    'XAMPP',
+    'phpMyAdmin',
+    'npm',
+    'etc'
+  ];
+
   const myLikes = [
     "Playing Video Games",
     "Watching Shows & Movies",
@@ -52,10 +83,13 @@ const Home: React.FC = () => {
             on this website.
           </h2>
           <hr className="my-8" />
-          <h2 className="font-playfair_bold text-2xl mb-4">I enjoy working on:</h2>
+          <h2 className="font-playfair_bold text-2xl">I enjoy working on:</h2>
           <Collage words={TechnicalLikes} /> 
           <hr className="my-8" />
-          <h2 className="font-playfair_bold text-2xl mt-8 mb-4">What I enjoy outside of work:</h2>
+          <h2 className="font-playfair_bold text-xl mb-4">Tech Stacks and Technology I have worked with: (not limited to these)</h2>
+          <ScatteredLabels labels={techStack} />
+          <hr className="my-8" />
+          <h2 className="font-playfair_bold text-2xl">What I enjoy outside of work:</h2>
           <Collage words={myLikes} /> 
         </div>
       </div>

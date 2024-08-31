@@ -13,6 +13,17 @@ const CafeCapture: React.FC = () => {
     <Layout>
     <div className="flex justify-center items-center min-h-screen bg-gray-50">
       <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-lg text-left">
+      <div className="relative p-4 mb-4 rounded-lg">
+        {/* GitHub Project Source Button */}
+            <a
+                href="https://github.com/cherryontech/comet-cruisers-spring2024"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-2 right-2 bg-custom-nav-bar text-white font-semibold py-2 px-4 rounded-md hover:bg-green-300 transition duration-300"
+            >
+                My Source Here!
+            </a>
+        </div>
         {/* Project Title and Blurb */}
         <div className="flex items-center mb-8">
           <img src={seaScribeLogo} alt="SeaScribe Project" className="w-50 h-30 mr-4 rounded-lg" />

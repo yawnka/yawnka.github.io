@@ -1,18 +1,20 @@
 import React from 'react';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
+import { techBadges } from '../components/techBadges';
 
 const Projects: React.FC = () => {
   const title = 'Projects';
-  const description = "Here are the projects I have worked on and learned so much from! Some projects may not have an article.";
+  const description = "Here are the projects I have worked on and learned from! Some projects may not have an article and/or public GitHub source (sorry).";
   const projectsList = [
     {
       slug:'project-one',
       url: 'https://github.com/yawnka/Binged',
       name: 'Binged',
       date: '2024',
-      tagline: 'Full Stack Social Media Hinge like website to discover books and make friends!',
+      tagline: 'Full Stack Social Media (Hinge like) website to discover books and make friends!',
       writeup: '/articles/binged',
+      techStack: ['Python', 'React', 'MongoDB', 'NodeJS', 'Numpy', 'Pandas', 'TailwindCSS', 'Sklearn', 'Scipy', 'JavaScript'  ],
       visible: true,
     },
     {
@@ -22,6 +24,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Website/App to explore and discover different cafe spots in NYC.',
       writeup: '/articles/cafeCapture',
+      techStack: [],
       visible: false,
     },
     {
@@ -31,6 +34,17 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Website created for those dealing with burnout to journal and create to-dos and interact with a supportive bot!',
       writeup: '/articles/SeaScribe',
+      techStack: ['React', 'NodeJS', 'JavaScript', 'TailwindCSS','Netlify'],
+      visible: true,
+    },
+    {
+      slug:'project-ten',
+      url: 'https://github.com/yawnka/React-Native-WebApp',
+      name: 'Video Social Media Mobile App ',
+      date: '2024',
+      tagline: 'Full-Stack Mobile Application to upload and share videos with friends! Created by following a YouTube tutorial for learning.',
+      writeup: '/articles/YTMobileApp',
+      techStack: ['React', 'NodeJS', 'JavaScript', 'NativeWind', 'NodeJS', 'Appwrite'],
       visible: true,
     },
     {
@@ -40,6 +54,7 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Created a database system along with a website for police officers and users to obtain police related information.',
       writeup: '/articles/PoliceDatabase',
+      techStack: ['Python', 'XAMPP', 'phpMyAdmin', 'SQL', 'HTML', 'CSS', 'JavaScript'],
       visible: true,
     },
     {
@@ -49,7 +64,8 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Team based project creating a VR based navigation and utility app to explore a NYU library and find books and rooms.',
       writeup: '/articles/project-four',
-      visible: true,
+      techStack: [],
+      visible: false,
     },
     {
       slug:'project-eight',
@@ -58,7 +74,8 @@ const Projects: React.FC = () => {
       date: '2024',
       tagline: 'Basic implementation of ping pong while learning game dev.',
       writeup: '/articles/project-four',
-      visible: true,
+      techStack: [],
+      visible: false,
     },
     {
       slug:'project-nine',
@@ -66,7 +83,8 @@ const Projects: React.FC = () => {
       name: 'Autonomous Measurement Robot',
       date: '2024',
       tagline: 'Full robotic build to autonmously measure and display space given in an area.',
-      writeup: '/articles/project-four',
+      writeup: '/articles/RAD',
+      techStack: ['Arduino', 'ROS', 'C'],
       visible: true,
     },
   ];
@@ -75,7 +93,7 @@ const Projects: React.FC = () => {
       <div className="container mx-auto p-6">
         <h1 className="text-4xl font-bold mb-4">{title}</h1>
         <p className="text-lg mb-8">{description}</p>
-
+  
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projectsList
             .filter(project => project.visible)
@@ -86,13 +104,24 @@ const Projects: React.FC = () => {
               </div>
               <h2 className="text-xl font-bold mb-2">{project.name}</h2>
               <p className="mb-4">{project.tagline}</p>
-              <div className="flex space-x-2">
+              <div className="flex flex-wrap mt-4 space-x-2">
+                {project.techStack.map((tech, index) => (
+                  <img
+                    key={index}
+                    src={techBadges[tech]}
+                    alt={tech}
+                    className="inline-block h-6 mb-2"
+                    style={{ width: 'auto', maxWidth: '100%' }}
+                  />
+                ))}
+              </div>
+              <div className="flex space-x-2 mt-2">
                 {project.writeup && (
-                  <Link to={project.writeup} className="bg-blue-500 text-white px-4 py-2 rounded">
+                  <Link to={project.writeup} className="bg-custom-nav-bar text-white px-4 font-bold hover:bg-custom-dark-green py-2 rounded">
                     Article
                   </Link>
                 )}
-                <a href={project.url} target="_blank" rel="noreferrer" className="bg-gray-700 text-white px-4 py-2 rounded">
+                <a href={project.url} target="_blank" rel="noreferrer" className="bg-gray-500 font-bold hover:bg-gray-800 text-white px-4 py-2 rounded">
                   Source
                 </a>
               </div>

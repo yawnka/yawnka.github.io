@@ -13,7 +13,18 @@ const PoliceDatabase: React.FC = () => {
     <Layout>
     <div className="flex justify-center items-center min-h-screen bg-gray-50">
       <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-lg text-left">
-        {/* Project Title and Blurb */}
+        <div className="relative p-4 mb-4 rounded-lg">
+          {/* GitHub Project Source Button */}
+              <a
+                  href="https://github.com/yawnka/CrimeTracker_DB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-2 right-2 bg-custom-nav-bar text-white font-semibold py-2 px-4 rounded-md hover:bg-green-300 transition duration-300"
+              >
+                  My Source Here!
+              </a>
+          </div>
+          {/* Project Title and Blurb */}
         <div className="flex items-center mb-8">
           <h1 className="text-4xl font-bold mb-4">{projectTitle}</h1>
         </div>
@@ -24,9 +35,9 @@ const PoliceDatabase: React.FC = () => {
         <p className="mb-4"> This project was created to learn about databases and how to connect code to a phpMyAdmin 
           localhost database server. I utilized XAMPP to host the server to create and use database information on phpmyAdmin. 
           Databases, tables, and information were created using SQL statements as attached in the source. The fullstack website was created for two views:
-           a normal viewer and a police officer with more viewer privileges. There is a registration system for the two different views
-           which displays different pages and viewership of private and public data based on the user. The code pulls information
-           using SQL statements to pull from the database. </p>
+          a normal viewer and a police officer with more viewer privileges. There is a registration system for the two different views
+          which displays different pages and viewership of private and public data based on the user. The code pulls information
+          using SQL statements to pull from the database. </p>
 
         {/* Role */}
         <div className="flex items-center space-x-4 mb-4">
@@ -102,7 +113,6 @@ const PoliceDatabase: React.FC = () => {
         <li className="black-bold">CSS</li>
         <li className="black-bold">JavaScript</li>
         </ul>
-
       </div>
     </div>
     </Layout>
