@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
     {
       slug:'project-six',
       url: `https://github.com/yawnka/CrimeTracker_DB`,
-      name: 'Police Station Criminal Database & Website',
+      name: 'Police Station Database & Website',
       date: '2024',
       tagline: 'Created a database system along with a website for police officers and users to obtain police related information.',
       writeup: '/articles/PoliceDatabase',

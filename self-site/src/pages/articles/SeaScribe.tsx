@@ -52,7 +52,7 @@ const CafeCapture: React.FC = () => {
       
       {/* Demo Section */}
       <div className="mt-4 mb-4">
-        <h2 className="text-2xl font-bold">Demo!</h2>
+        <h2 className="text-2xl font-bold">Demo Link & Image</h2>
         <a href="https://seascribe.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 text-xl font-bold hover:underline">
           Click this to try out SeaScribe!
         </a>
@@ -101,16 +101,17 @@ const CafeCapture: React.FC = () => {
         <li>Making the chat bot more interactable, like an AI powered chatbot that can respond.</li>
       </ul>
 
-      <h2 className="text-2xl font-bold mb-2">Cherry on Tech</h2>
-      <p className="text-xl mb-1">"Cherry on Tech is a volunteer-run organization whose mission is to
+      <h2 className="text-2xl font-bold mb-2 text-red-500">Cherry on Tech</h2>
+      <p className="text-xl mb-2">"Cherry on Tech is a volunteer-run organization whose mission is to
         support people of women, non-binary, and trans folks who are new to the tech world. We are dedicated to
           developing a community that empowers marginalized genders while promoting the power of being part of a 
           tech squad. -*From their website* "</p>
-      <a href="https://cherryon.tech/" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold text-lg mb-2 hover:underline">
-          Check out the Cherry on Tech website!
+      <a href="https://cherryon.tech/" target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold text-lg mb-4 hover:underline">
+          Click to check out the Cherry on Tech website!
         </a>
-      <p className="text-xl mb-1"> The Cohort Program is a 15-week long program to create a working accessible web design MVP with a team replication a startup. Every person is provided a mentor to help with their role and each team is provided a mentor to facilitate with any questions or issues. There are at least two weekly meetings with the full team. One global meeting with the entire Cohort program. Other meetings dedicated to specfic teams, such as Pair Programming Meets with the Frontend Developer team. This program ensures constant communication, learning, growth, and understanding.  </p>
-      <p className="text-lg mb-4"> My Input: This community is very supporting, ambitious, and kind group of people. I met so many women, non-binary, and trans people who are all so intelligent and amibitous in gaining and using their skills to create MVP's and work professionally amongst others.</p>
+      <h3 className="text-xl font-semibold mt-2 mb-2">About the Cohort Program:</h3>
+      <p className="text-lg mb-4"> This is a 15-week long program to create a working accessible web design MVP with a team replication a startup. Every person is provided a mentor to help with their role and each team is provided a mentor to facilitate with any questions or issues. There are at least two weekly meetings with the full team. One global meeting with the entire Cohort program. Other meetings dedicated to specfic teams, such as Pair Programming Meets with the Frontend Developer team. This program ensures constant communication, learning, growth, and understanding.  </p>
+      <p className="text-lg mb-4"><span className="underline font-bold">Mini-Blog about my experience:</span> This community is very supporting, ambitious, and kind group of people. I met so many women, non-binary, and trans people who are all so intelligent and amibitous in gaining and using their skills to create MVP's and work professionally amongst others.</p>
     </div>
     </div>
     </Layout>
