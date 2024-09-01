@@ -17,7 +17,7 @@ const Blogs: React.FC = () => {
     },
     {
       slug:'project-two',
-      name: 'Google Machine Learning Course Broken Down by a Noob',
+      name: 'Google Machine Learning Course Broken Down by Beginner',
       date: '2024',
       tagline: 'My attempt at trying to understand ML!',
       writeup: '/blogs/two',
@@ -28,7 +28,7 @@ const Blogs: React.FC = () => {
       name: 'Stardew Valley LLM PCG Research',
       date: '2024',
       tagline: 'Research in AI and Games.',
-      writeup: '/blogs/two',
+      writeup: '/blogs/three',
       visible: true,
     },
   ];

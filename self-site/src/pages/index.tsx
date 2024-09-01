@@ -63,7 +63,7 @@ const Home: React.FC = () => {
     <Layout>
       <div className="flex flex-col justify-center items-center min-h-screen">
         <div className="text-left">
-          <h1 className="font-playfair_bold text-4xl mb-4">Welcome to my page, I'm Yanka!</h1>
+          <h1 className="font-playfair_bold text-4xl mt-4 mb-4">Welcome to my page, I'm Yanka!</h1>
           <h2 className="font-playfair_bold text-2xl mb-4">
             I'm a software developer/engineer who loves creating & learning!
           </h2>

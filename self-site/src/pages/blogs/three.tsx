@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../../components/layout';
 
-const Two: React.FC = () => {
-  const blogTitle = 'Google Machine Learning Course Broken Down by Beginner';
+const Three: React.FC = () => {
+  const blogTitle = 'Stardew Valley LLM PCG Research';
 
   return (
     <Layout>
@@ -13,7 +13,7 @@ const Two: React.FC = () => {
           <h1 className="text-4xl text-center font-silkscreen font-bold">{blogTitle}</h1>
         </div>
         <h1 className="text-2xl font-silkscreen font-bold text-center mb-4">Author: Yanka Sikder</h1>
-        <h1 className="text-2xl font-silkscreen font-bold text-center mb-4">July, 2024 - Present (still updating)</h1>
+        <h1 className="text-2xl font-silkscreen font-bold text-center mb-4">August 2024 - Present</h1>
         <p className="text-xl font-anticSlab mb-8">N/A</p>
         <hr></hr>
         <p className="text-xl mt-8 font-anticSlab">Thank you for reading!</p>
@@ -24,4 +24,4 @@ const Two: React.FC = () => {
   );
 };
 
-export default Two;
+export default Three;

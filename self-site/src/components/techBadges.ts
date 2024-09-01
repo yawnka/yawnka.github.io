@@ -20,5 +20,9 @@ export const techBadges = {
     ROS: "https://img.shields.io/badge/-ROS-22314E?style=flat-square&logo=ros&logoColor=white",
     Arduino: "https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white",
     C: "https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white",
+    TypeScript: "https://img.shields.io/badge/typescript-007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
+    Gatsby: "https://img.shields.io/badge/gatsby-663399.svg?style=for-the-badge&logo=gatsby&logoColor=white",
+    GDScript: "https://img.shields.io/badge/gdscript-478CBF.svg?style=for-the-badge&logo=godot-engine&logoColor=white",
+    GoDot: "https://img.shields.io/badge/godot-478CBF.svg?style=for-the-badge&logo=godot-engine&logoColor=white",
   };
   

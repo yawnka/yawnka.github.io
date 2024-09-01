@@ -5,7 +5,7 @@ import { techBadges } from '../components/techBadges';
 
 const Projects: React.FC = () => {
   const title = 'Projects';
-  const description = "Here are the projects I have worked on and learned from! Some projects may not have an article and/or public GitHub source (sorry).";
+  const description = "Here are the projects I have worked/working on and learned from!";
   const projectsList = [
     {
       slug:'project-one',
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
       url: 'https://github.com/cherryontech/comet-cruisers-spring2024',
       name: 'SeaScribe',
       date: '2024',
-      tagline: 'Website created for those dealing with burnout to journal and create to-dos and interact with a supportive bot!',
+      tagline: 'Website created for those dealing with burnout. Allows users to journal, create to-dos and interact with a supportive bot!',
       writeup: '/articles/SeaScribe',
       techStack: ['React', 'NodeJS', 'JavaScript', 'TailwindCSS','Netlify'],
       visible: true,
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
       url: `https://github.com/yawnka/CrimeTracker_DB`,
       name: 'Police Station Database & Website',
       date: '2024',
-      tagline: 'Created a database system along with a website for police officers and users to obtain police related information.',
+      tagline: 'Created a database system along with a website for a Police Station for users/officers to obtain related information.',
       writeup: '/articles/PoliceDatabase',
       techStack: ['Python', 'XAMPP', 'phpMyAdmin', 'SQL', 'HTML', 'CSS', 'JavaScript'],
       visible: true,
@@ -70,21 +70,31 @@ const Projects: React.FC = () => {
     {
       slug:'project-eight',
       url: `https://github.com/yawnka/yawnka.github.io`,
-      name: 'Ping Pong',
+      name: 'My Personal Website!',
       date: '2024',
-      tagline: 'Basic implementation of ping pong while learning game dev.',
-      writeup: '/articles/project-four',
-      techStack: [],
-      visible: false,
+      tagline: 'This in itself is a project where I wanted to work on developing with new technologies such as Gatsby & TypeScript! Deployed using Gastby connected to GitHub Pages.',
+      writeup:'',
+      techStack: ['React', 'TypeScript', 'Gatsby'],
+      visible: true,
     },
     {
       slug:'project-nine',
-      url: `https://github.com/yawnka/yawnka.github.io`,
-      name: 'Autonomous Measurement Robot',
-      date: '2024',
+      url: `https://github.com/yawnka/JEYRobot`,
+      name: 'Autonomous Area Tracking Robot',
+      date: '2021',
       tagline: 'Full robotic build to autonmously measure and display space given in an area.',
       writeup: '/articles/RAD',
       techStack: ['Arduino', 'ROS', 'C'],
+      visible: true,
+    },
+    {
+      slug:'project-11',
+      url: `https://github.com/yawnka/pingPong`,
+      name: 'Ping Pong',
+      date: '2024',
+      tagline: 'Basic implementation of ping pong trying to understand the basics of game development.',
+      writeup: '',
+      techStack: ['GDScript', 'GoDot'],
       visible: true,
     },
   ];
@@ -116,7 +126,7 @@ const Projects: React.FC = () => {
                 ))}
               </div>
               <div className="flex space-x-2 mt-2">
-                {project.writeup && (
+                {project.writeup && project.writeup.trim() !== '' && (
                   <Link to={project.writeup} className="bg-custom-nav-bar text-white px-4 font-bold hover:bg-custom-dark-green py-2 rounded">
                     Article
                   </Link>
