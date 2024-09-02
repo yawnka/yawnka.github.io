@@ -42,7 +42,8 @@ module.exports = {
         'custom-nav-bar': '#afd9ab',
         'custom-cream': '#f5e8c9',
         'custom-light-cream': '#faf4e6',
-        'custom-dark-green': '#166307'
+        'custom-dark-green': '#166307',
+        'custom-purple': '#38269c'
       }),
       fontFamily: {
         judson: ['Judson-Regular', 'serif'],
