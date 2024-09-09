@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 
 const Three: React.FC = () => {
-  const blogTitle = 'Stardew Valley LLM PCG Research';
+  const blogTitle = 'Exploring Large Language Model (LLM) Procedural Content Generation (PCG) in Stardew Valley';
 
   return (
     <Layout>
@@ -14,7 +14,9 @@ const Three: React.FC = () => {
         </div>
         <h1 className="text-2xl font-silkscreen font-bold text-center mb-4">Author: Yanka Sikder</h1>
         <h1 className="text-2xl font-silkscreen font-bold text-center mb-4">August 2024 - Present</h1>
+        <section>
         <p className="text-xl font-anticSlab mb-8">N/A</p>
+        </section>
         <hr></hr>
         <p className="text-xl mt-8 font-anticSlab">Thank you for reading!</p>
         <p className="text-xl font-anticSlab mb-8"></p>

@@ -25,7 +25,7 @@ const Blogs: React.FC = () => {
     },
     {
       slug:'project-three',
-      name: 'Stardew Valley LLM PCG Research',
+      name: 'Exploring Large Language Model (LLM) Procedural Content Generation (PCG) in Stardew Valley [Research]',
       date: '2024',
       tagline: 'Research in AI and Games.',
       writeup: '/blogs/three',

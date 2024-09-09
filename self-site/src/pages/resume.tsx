@@ -14,14 +14,16 @@ const Resume: React.FC = () => {
         <section>
           <h2 className="text-xl font-anticSlab font-bold mb-2">EDUCATION</h2>
           <p className="text-2xl font-bold text-custom-purple mb-2">New York University Tandon School of Engineering</p>
-          <p className="font-bold">B.S Comuter Science - May 2025</p>
+          <p className="font-bold">B.S Computer Science - May 2025</p>
           <p className="ml-6"> Minor in Mathematics & in Cybersecurity</p>
-          <p className="font-bold">M.S Comuter Science | BSMS Track - May 2026</p>
-          <p><span className="font-bold">Relevant Coursework:</span> Object Oriented Programming(C++), Data Structures and Algorithms(Python), Discrete Mathematics, Data Analysis, Computer Architecture and Organization, Introduction to Databases, Design and Analysis of Algorithms, Software Engineering, Operating Systems(C), Linear Algebra, Computer Networking, Artifical Intelligence, Computer Security. </p>
+          <p className="font-bold">M.S Computer Science | BSMS Track - May 2026</p>
+          <p><span className="font-bold">Relevant Coursework:</span> Object Oriented Programming (C++), Data Structures and Algorithms (Python), Discrete Mathematics, Data Analysis, Computer Architecture and Organization, Introduction to Databases, Design and Analysis of Algorithms, Operating Systems (C), Linear Algebra, Computer Networking, Artifical Intelligence, Computer Security. </p>
+          <p><span className="font-bold">Relevant Coursework This Semester:</span> Foundations of Data Science, Software Engineering, Machine Learning, Intro to Game Programming, Network Security, Application Security. </p>
         </section>
 
-        <section className="my-8">
-          <h2 className="text-xl font-anticSlab font-bold mb-2">EXPERIENCE</h2>
+        <section className="my-6">
+          <hr></hr>
+          <h2 className="text-xl font-anticSlab font-bold mt-4 mb-2">EXPERIENCE</h2>
           <div>
             <h3 className="text-2xl text-custom-purple mb-2 font-bold">NYU IT Desktop & Software Support</h3>
             <p>Student Employee Fall 2022-Present | Summer Intern 2023 & 2024 </p>
@@ -33,7 +35,7 @@ const Resume: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl mb-2 font-bold">Cherry On Tech Spring Cohort</h3>
+            <h3 className="text-2xl mb-2 text-red-500 font-bold">Cherry On Tech Spring Cohort</h3>
             <p>Software Developer - March 2024 :July 2024 </p>
             <ul className="list-disc ml-6 mb-4">
               <li>Collaborating with a team of 8 in a 15-week program to design an inclusive user-centric product, utilizing tools like FigJam, Jira, GitHub, and VSCode for SCRUM planning and development.</li>
@@ -82,11 +84,12 @@ const Resume: React.FC = () => {
           </div>
         </section>
 
-        <section className="my-8">
-          <h2 className="text-xl font-anticSlab font-bold mb-2">LEADERSHIP, PROJECTS, AND OTHER ACTIVITIES</h2>
+        <section className="my-6">
+          <hr></hr>
+          <h2 className="text-xl font-anticSlab font-bold mt-4 mb-2">LEADERSHIP, PROJECTS, AND OTHER ACTIVITIES</h2>
           <div>
             <h3 className="text-2xl mb-2 font-bold">Girls Who Code College Loops </h3>
-            <p> Events Coordinator 2024 | Member 2020-Present </p>
+            <p> Events Coordinator 2024 | Member 2021-Present </p>
             <ul className="list-disc ml-6 mb-4">
               <li>Handle planning and managing monthly events for the members alongside other e-board members, advisors, companies, alumni, professional-workers, etc.</li>
               <li>Support, uplfift, enlighten, and socialize with others to empower them in the field of Tech.</li>
