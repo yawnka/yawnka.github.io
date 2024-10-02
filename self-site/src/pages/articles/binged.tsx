@@ -87,7 +87,7 @@ const Binged: React.FC = () => {
           <li><span className="black-bold">Flask:</span> Python-based web development framework</li>
           <li><span className="black-bold">MongoDB Atlas AWS Database:</span> Cluster created for storing & pulling book and user data.</li>
           <li><span className="black-bold">Google OAuth 2.0</span> (Not currently available on the website): Implemented but due to cookie issues I opted to use registration with Flask for the production site.</li>
-          <li><span className="black-bold">AI/ML Models</span></li>
+          <li><span className="black-bold">AI/ML Models with NLP techniques</span></li>
           <a><span className="black-bold"> [1] Content-Based Filtering Machine Learning Model for Book Recommendations:</span></a>
             <p>Tools such as pandas and numpy are used for data handling such as one-hot encoding book genres. 
               Sklearn was used for scaling and text-vectorization (TF-IDF). Then using the transformed and scaled information, the model calculates

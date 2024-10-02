@@ -6,9 +6,9 @@ const Resume: React.FC = () => {
     <Layout>
       <div className="container mx-auto p-6">
         <header className="text-center">
+        <p className="text-xl">
+  Note: Check my <a href="https://www.linkedin.com/in/yanka-sikder/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">LinkedIn</a> for the most updated presentation of information about my professional experiences.</p>
           <h1 className="text-4xl font-bold mb-2">Resume</h1>
-          <p className="text-xl">
-          </p>
         </header>
 
         <section>
